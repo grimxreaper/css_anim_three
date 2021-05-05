@@ -304,3 +304,10 @@ button:hover {
     animation: fadeIn 2s ease-in infinite;
 }
 
+.right_arm{
+    animation: fadeIn 7s ease-in infinite alternate-reverse;
+}
+
+.left_arm  {
+    animation: fadeIn 5s ease-in infinite alternate-reverse;
+}
