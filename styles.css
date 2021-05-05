@@ -17,3 +17,169 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.turquoise_butterfly {
+    animation: rotating 4s linear infinite;
+    animation-delay: -1s;
+}
+
+@keyframes rotating {
+    0% {
+        transform: translate(0, 10px) rotate(10deg);
+
+    }
+    50% {
+        transform: translate(0, 20px) rotate3d(2, -1, -1, 45deg);
+    }
+
+    100% {
+        transform:  translate(50, 100px) rotate3d(1, 0.8, -1, 20deg);
+
+    }
+}
+.turquoise_butterfly:hover{
+    opacity: 0.2;
+}
+
+.coral_butterfly {
+    animation-name: coral;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+
+
+}
+@keyframes coral {
+    0% {
+        transform: translate(0, 20px) rotate(5deg);
+
+    }
+    50% {
+       transform: rotate3d(2, 0, -1, -0.2turn);
+    }
+    100% {
+        transform: translate(10, 100px);
+
+    }
+}
+.coral_butterfly:hover{
+    opacity: 0.2;
+}
+
+.blue_butterfly {
+    animation: blueFlight 4s infinite;
+
+}
+    
+@keyframes blueFlight {
+    0% {
+        transform: translate(0px,0px) rotate3d(1, -1, 1, 85deg);
+
+    }
+    50% {
+        transform: translate(100px, 300px) rotate3d(1, 0.8, -1, 20deg); 
+    }
+
+    100% {
+        transform:  translate(200px, -20px) rotate3d(1, 0.8, -1, 100deg);
+    }
+}
+
+.blue_butterfly:hover{
+    opacity: 0.2;
+}
+
+.crescent {
+    opacity: 1;
+    animation-name: fadeIn;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.topSpark {
+    transform-origin: center;
+    animation: topPulse 3s ease infinite alternate;
+}
+
+@keyframes topPulse{
+    0% {
+        transform: scale(0.95);
+    }
+    70% {
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(0.95);
+        opacity: 0.8;
+    }
+}
+
+.centerSpark {
+    transform-origin: center;
+    animation: pulse 3s ease infinite alternate-reverse;
+}
+
+@keyframes pulse{
+    0% {
+        transform: scale(0.95);
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.2;
+    }
+    100%{
+        transform: scale(0.95);
+    }
+}
+
+.leftSpark {
+    animation: leftPulse 3s ease infinite alternate-reverse;
+    transform-origin: center;
+}
+@keyframes leftPulse{
+    0% {
+        transform: scale(0.98);
+    }
+    50% {
+        transform: scale(1);
+        opacity: 0.2;
+    }
+    100%{
+        transform: scale(0.98);
+    }
+}
+
+.rightSpark {
+    animation: rightPulse 2.5s linear infinite alternate-reverse;
+    opacity: 0.7;
+    transform-origin: center;
+}
+
+
+@keyframes rightPulse{
+    0% {
+        transform: scale(0.95);
+        opacity: 0.5;
+    }
+    90% {
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.95);
+        opacity: 0;
+    }
+
+}
+
