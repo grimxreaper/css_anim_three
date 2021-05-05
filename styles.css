@@ -180,6 +180,13 @@ body {
         transform: scale(0.95);
         opacity: 0;
     }
+}
 
+.left_eye {
+    animation: fadeIn 2s ease-in infinite;
+}
+
+.right_eye {
+    animation: fadeIn 2s ease-in infinite;
 }
 
