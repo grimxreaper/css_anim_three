@@ -3,19 +3,91 @@
     padding: 0;
     height: 85%;
     width: 85%;
+    box-sizing: border-box;
 }
 
 body {
+    height: 60vh;
+    display: flex;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    align-content: space-between;
+    flex-direction: column;
     text-align: center;
+    text-transform: lowercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
+.form {
+    width: 50%;
+    position: relative;
+    height: 50px;
+    /* overflow: hidden; */
+    margin-top: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-5%, -95%);
+}
+
+.form input {
+    width: 100%;
+    height: 100%;
+    color: rgb(28, 31, 34);
+    padding-top: 20px;
+    border: none;
+    outline: none;
+    animation: neonTry .9s ease-in-out infinite alternate;
+}
+
+@keyframes neonTry {
+    from {
+        text-shadow:
+
+    }
+    to {
+
+    }
+}
+
+.form label {
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid rgb(139, 128, 128);
+}
+
+.content-name {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+
+
+button {
+    height: 45px;
+    width: 150px;
+    margin: 45px 0;
+    background-color:rgb(0, 0, 0);
+    color: white;
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-78%, 5%);
+    border-radius: 5px;
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .scene {
     /* centering  */
-    position: fixed;
+    position: fixed; 
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -65%);
 }
 
 .turquoise_butterfly {
