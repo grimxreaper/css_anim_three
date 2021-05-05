@@ -4,6 +4,7 @@
     height: 85%;
     width: 85%;
     box-sizing: border-box;
+
 }
 
 body {
@@ -15,7 +16,8 @@ body {
     flex-direction: column;
     text-align: center;
     text-transform: lowercase;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .form {
@@ -36,16 +38,28 @@ body {
     padding-top: 20px;
     border: none;
     outline: none;
-    animation: neonTry .9s ease-in-out infinite alternate;
 }
 
 @keyframes neonTry {
-    from {
+    0% {
         text-shadow:
+        0 0 6px rgba(242, 246, 246, 0.92),
+        0 0 30px rgba(198, 143, 143, 0.34),
+        0 0 12px rgba(61, 2, 2, 0.52),
+        0 0 21px rgba(152, 20, 20, 0.92),
+        0 0 34px rgba(146, 22, 22, 0.78),
+        0 0 54px rgba(249, 68, 68, 0.92);
 
     }
-    to {
-
+    100% {
+        text-shadow:
+        0 0 6px rgba(202,228,225,0.98),
+        0 0 30px rgba(135, 249, 236, 0.42),
+        0 0 12px rgba(118, 194, 203, 0.58),
+        0 0 22px rgba(28, 161, 173, 0.84),
+        0 0 38px rgba(9, 98, 98, 0.88),
+        0 0 60px rgb(7, 82, 86);
+        filter: blur(0.018em)
     }
 }
 
@@ -63,7 +77,9 @@ body {
     position: absolute;
     bottom: 5px;
     left: 0px;
-    transition: all 0.3s ease;
+    /* transition: all 0.3s ease; */
+    color: #297377;
+    animation: neonTry .85s ease-in-out infinite alternate;
 }
 
 
@@ -71,12 +87,12 @@ button {
     height: 45px;
     width: 150px;
     margin: 45px 0;
-    background-color:rgb(0, 0, 0);
+    background-color:rgb(132, 130, 130);
     color: white;
     position: fixed; 
     top: 50%;
     left: 50%;
-    transform: translate(-78%, 5%);
+    transform: translate(-75%, 5%);
     border-radius: 5px;
     border: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
