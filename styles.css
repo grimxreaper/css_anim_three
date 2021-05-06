@@ -9,7 +9,7 @@
 }
 
 body {
-    background: rgba(4, 9, 93, 0.92);
+    background: rgba(44, 50, 175, 0.92);
     height: 60vh;
     display: flex;
     align-content: space-between;
@@ -22,7 +22,7 @@ body {
 .form {
     width: 50%;
     position: relative;
-    height: 50px;
+    height: 60px;
     margin-top: auto;
     top: 20%;
     left: 50%;
@@ -153,8 +153,6 @@ button {
     animation-play-state: running;
     animation-timing-function: ease;
     animation-direction: alternate;
-
-
 }
 @keyframes coral {
     0% {
@@ -163,6 +161,7 @@ button {
     }
     50% {
        transform: rotate3d(2, 0, -1, -0.2turn);
+       opacity: 0.8;
     }
     100% {
         transform: translate(10, 100px);
